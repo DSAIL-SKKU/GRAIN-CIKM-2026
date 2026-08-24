@@ -30,7 +30,7 @@ log "session start: $RUN_STAMP"
 log "DEVICE=$DEVICE REG=$REG EPOCHS=$EPOCHS INFER_STRUCTURE_WEIGHT=$INFER_STRUCTURE_WEIGHT"
 
 echo "========== [1/2] train_raid.py =========="
-python train_raid.py \
+python src/train_raid.py \
   --dataset RAID-news \
   --finetune \
   --article_level \
@@ -82,7 +82,7 @@ if [[ "$MAX_SAMPLES" -gt 0 ]]; then
   EVAL_ARGS+=(--max_samples "$MAX_SAMPLES")
 fi
 
-python  eval/eval.py "${EVAL_ARGS[@]}" 2>&1 | tee -a "$SESSION_LOG"
+python  src/eval/eval.py "${EVAL_ARGS[@]}" 2>&1 | tee -a "$SESSION_LOG"
 eval_status=${PIPESTATUS[0]}
 if [[ "$eval_status" -ne 0 ]]; then
   log "eval.py failed (exit=$eval_status)"

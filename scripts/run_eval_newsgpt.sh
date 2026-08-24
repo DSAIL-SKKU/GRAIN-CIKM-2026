@@ -39,7 +39,7 @@ if [[ "$MAX_SAMPLES" -gt 0 ]]; then
   EVAL_ARGS+=(--max_samples "$MAX_SAMPLES")
 fi
 
-python eval/eval_realworld.py "${EVAL_ARGS[@]}"
+python src/eval/eval_realworld.py "${EVAL_ARGS[@]}"
 
 
 # RUN_DIR=results/2026-06-01/RAID-news-22-28-26-322680 \

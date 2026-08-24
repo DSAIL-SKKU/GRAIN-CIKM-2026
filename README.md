@@ -24,7 +24,7 @@ Our experiments show that article-level structure provides complementary signals
 
 
 <p align="center">
-  <img width="1500" height="250" alt="Image" src="../model_reivew/etc/main.png" />
+  <img width="1500" height="250" alt="Image" src="./assets/main.png" />
   <br>
   <em>Figure : Overview of the proposed AI-generated news detection framework. The model jointly learns paragraph-level semantic
 representations and article-level structures through information gain, semantic cohesion, and headline alignment, and fuses
@@ -108,13 +108,13 @@ pip install -r requirements.txt
 ### Training & Evaluation
 
 ```bash
-sh run_train_eval.sh
+sh scripts/run_train_eval.sh
 ```
 
 ### Evaluation
 
 ```bash
-python eval/eval.py 
+python src/eval/eval.py 
 ```
  
 

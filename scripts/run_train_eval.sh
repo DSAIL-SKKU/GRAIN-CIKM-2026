@@ -36,7 +36,7 @@ echo "TRAIN_JSON=$TRAIN_JSON"
 echo "TEST_JSON=$TEST_JSON"
 
 echo "========== [1/2] train.py =========="
-python train.py \
+python src/train.py \
   --dataset MultiDomainXSum \
   --finetune \
   --article_level \
@@ -71,7 +71,7 @@ if [[ "$MAX_SAMPLES" -gt 0 ]]; then
   EVAL_ARGS+=(--max_samples "$MAX_SAMPLES")
 fi
 
-python eval/eval.py "${EVAL_ARGS[@]}"
+python src/eval/eval.py "${EVAL_ARGS[@]}"
 
 echo ""
 echo "done. run_dir: $RUN_DIR"

@@ -60,7 +60,7 @@ if [[ "$MAX_SAMPLES" -gt 0 ]]; then
   EVAL_ARGS+=(--max_samples "$MAX_SAMPLES")
 fi
 
-python eval/eval_detectRL.py "${EVAL_ARGS[@]}"
+python src/eval/eval_detectRL.py "${EVAL_ARGS[@]}"
 
 
 # ── 사용 예시 ─────────────────────────────────────────────────────────────────
