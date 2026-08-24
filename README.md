@@ -93,6 +93,8 @@ The results suggest that article-level structural patterns provide complementary
 
 ## 🚀 Getting Started
 
+> **Note:** The codebase is currently being organized and will be updated soon.
+
 ### Installed
 ```bash
 git clone https://github.com/DSAIL-SKKU/GRAIN-CIKM-2026.git
@@ -101,17 +103,15 @@ cd GRAIN-CIKM-2026
 pip install -r requirements.txt
 ```
 
-## Usage
+### Usage
 
-> Detailed training and evaluation instructions will be updated with the released code.
-
-### Training & Evaluation
+#### Training & Evaluation
 
 ```bash
 sh scripts/run_train_eval.sh
 ```
 
-### Evaluation
+#### Evaluation
 
 ```bash
 python src/eval/eval.py 
