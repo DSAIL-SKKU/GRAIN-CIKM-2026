@@ -3,3 +3,4 @@ results/
 .inpynb
 __pycache__/
 .DS_Store
+models/RoBERTa/pytorch_model.bin

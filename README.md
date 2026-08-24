@@ -2,9 +2,9 @@
 
 # GRAIN: Detecting AI-Generated News via Article-Level Structure
 > Youjin Lee, Chaewon Kang, YunSeok Choi, Jinyoung Han  
-> *The 35th ACM International Conference on Information and Knowledge Management (CIKM 2026)*
+> *The 35th ACM International Conference on Information and Knowledge Management (CIKM short 2026)*
 
-[![CIKM short 2026](https://img.shields.io/badge/CIKM-2026-blue.svg)](https://cikm2026.diag.uniroma1.it/)
+[![CIKM  2026](https://img.shields.io/badge/CIKM-2026-blue.svg)](https://cikm2026.diag.uniroma1.it/)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 </div>
