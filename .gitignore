@@ -1,0 +1,5 @@
+data_cache/
+results/
+.inpynb
+__pycache__/
+.DS_Store
