@@ -2,7 +2,7 @@
 # RAID-news 데이터로 학습 후 ai_gen_news CSV 평가까지 한 번에 실행
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 DEVICE="${DEVICE:-cuda:0}"

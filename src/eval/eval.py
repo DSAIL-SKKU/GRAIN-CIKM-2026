@@ -34,10 +34,11 @@ from sklearn.metrics import (
 )
 from tqdm import tqdm
 
-MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_DIR = os.path.dirname(SRC_DIR)
 os.chdir(MODEL_DIR)
-if MODEL_DIR not in sys.path:
-    sys.path.insert(0, MODEL_DIR)
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
 
 DEFAULT_DATA_ROOT = (
     # "/home/dsail/yjlee/police/ai_gen/dataset/ai_gen_news_dataset/merged_by_model_lang"

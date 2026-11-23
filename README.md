@@ -108,7 +108,7 @@ pip install -r requirements.txt
 #### Training & Evaluation
 
 ```bash
-sh scripts/run_train_eval.sh
+bash scripts/run_train_eval.sh
 ```
 
 #### Evaluation

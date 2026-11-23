@@ -2,7 +2,7 @@
 # RoBERTa 모델을 multi_domains_xsum_train.json 으로 평가
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 # ── 환경 변수로 오버라이드 가능 ───────────────────────────────────────────────
@@ -60,7 +60,7 @@ if [[ "$MAX_SAMPLES" -gt 0 ]]; then
   EVAL_ARGS+=(--max_samples "$MAX_SAMPLES")
 fi
 
-python src/eval/eval_detectRL.py "${EVAL_ARGS[@]}"
+python src/eval/eval_DetectRL.py "${EVAL_ARGS[@]}"
 
 
 # ── 사용 예시 ─────────────────────────────────────────────────────────────────
