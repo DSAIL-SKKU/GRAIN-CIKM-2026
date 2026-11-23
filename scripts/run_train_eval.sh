@@ -2,7 +2,7 @@
 # MultiDomainXSum 학습 후 eval.py(ai_gen_news CSV)까지 실행
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 DEVICE="${DEVICE:-cuda:0}"

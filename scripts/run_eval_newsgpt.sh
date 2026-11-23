@@ -2,7 +2,7 @@
 # newsgpt_ai_news_human.csv 평가 실행
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 DEVICE="${DEVICE:-cuda:0}"
